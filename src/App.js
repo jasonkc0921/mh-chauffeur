@@ -405,8 +405,8 @@ const App = () => {
                 <a href="#fleet" className="block text-gray-400 hover:text-gold transition-colors">Luxury Fleet</a>
                 <a href="#about" className="block text-gray-400 hover:text-gold transition-colors">About Us</a>
                 <a href="#contact" className="block text-gray-400 hover:text-gold transition-colors">Get Quote</a>
-                <a href="#" className="block text-gray-400 hover:text-gold transition-colors">Privacy Policy</a>
-                <a href="#" className="block text-gray-400 hover:text-gold transition-colors">Terms of Service</a>
+                <a href="#privacy" className="block text-gray-400 hover:text-gold transition-colors">Privacy Policy</a>
+                <a href="#tands" className="block text-gray-400 hover:text-gold transition-colors">Terms of Service</a>
               </div>
             </div>
             
