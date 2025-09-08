@@ -53,7 +53,7 @@ const App = () => {
   return (
     <div className="bg-black text-white min-h-screen">
       {/* Navigation */}
-      <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-black/90 backdrop-blur-md py-4' : 'bg-transparent py-6'}`}>
+      <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-black-90 backdrop-blur-md py-4' : 'bg-transparent py-6'}`}>
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
           <div className="text-2xl font-bold tracking-wider">
             <span className="text-gold">LE</span>VINCE
@@ -79,7 +79,7 @@ const App = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden bg-black/95 backdrop-blur-md">
+          <div className="md:hidden bg-black-95 backdrop-blur-md">
             <div className="px-4 py-6 space-y-4">
               <a href="#home" className="block hover:text-gold transition-colors" onClick={() => setIsMenuOpen(false)}>Home</a>
               <a href="#services" className="block hover:text-gold transition-colors" onClick={() => setIsMenuOpen(false)}>Services</a>
@@ -93,7 +93,7 @@ const App = () => {
 
       {/* Hero Section */}
       <section id="home" className="relative min-h-screen flex items-center justify-center hero-bg">
-        <div className="absolute inset-0 bg-black/60"></div>
+        <div className="absolute inset-0 bg-black-60"></div>
         
         <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight animate-fadeInUp">

@@ -361,15 +361,15 @@ button {
   -webkit-backdrop-filter: blur(12px);
 }
 
-.bg-black\\/90 {
+.bg-black-90 {
   background-color: rgba(0, 0, 0, 0.9);
 }
 
-.bg-black\\/60 {
+.bg-black-60 {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-.bg-gray-800\\/50 {
+.bg-gray-800-50 {
   background-color: rgba(31, 41, 55, 0.5);
 }
 
