@@ -375,7 +375,7 @@ const App = () => {
           <div className="grid md:grid-cols-4 gap-8">
             <div className="md:col-span-2">
               <div className="text-3xl font-bold mb-4">
-                <span className="text-gold">LE</span>VINCE
+                <span className="text-gold">First Class</span>Travel
               </div>
               <p className="text-gray-400 mb-6 max-w-md">
                 Premium chauffeur service delivering luxury and excellence across Malaysia. 
