@@ -1,6 +1,6 @@
 // App.js - Main Application Component
 import React, { useState, useEffect } from 'react';
-import { ChevronDown, Star, Clock, Shield, Users, Phone, Mail, MapPin, Menu, X, Car, Award, Sparkles } from 'lucide-react';
+import { ChevronDown, Star, Clock, Users, Phone, Mail, MapPin, Menu, X, Car, Award, Sparkles } from 'lucide-react';
 import './App.css';
 
 const App = () => {
