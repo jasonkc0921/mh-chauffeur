@@ -199,9 +199,9 @@ const App = () => {
       <section id="fleet" className="py-20">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Exclusive Luxury Fleet</h2>
+            <h2 className="text-4xl font-bold mb-4">Exclusive MPV Luxury Fleet</h2>
             <p className="text-xl text-gray-400">
-              Mercedes E Class and BMW 7 series at your service anytime, anywhere.
+              Toyata Alphard & Vellfire at your service anytime, anywhere.
             </p>
           </div>
 
@@ -213,10 +213,6 @@ const App = () => {
                 developed into the leading provider of ground transportation in the area.
               </p>
               <div className="space-y-4">
-                <div className="flex items-center space-x-3 feature-item">
-                  <Shield className="w-6 h-6 text-gold" />
-                  <span>Fully insured and licensed</span>
-                </div>
                 <div className="flex items-center space-x-3 feature-item">
                   <Clock className="w-6 h-6 text-gold" />
                   <span>24/7 availability with live tracking</span>
