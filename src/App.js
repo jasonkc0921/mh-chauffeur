@@ -56,7 +56,7 @@ const App = () => {
       <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-black-90 backdrop-blur-md py-4' : 'bg-transparent py-6'}`}>
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
           <div className="text-2xl font-bold tracking-wider">
-            <span className="text-gold">LE</span>VINCE
+            <span className="text-gold">FIRST </span>CLASS
           </div>
           
           {/* Desktop Menu */}
@@ -161,7 +161,7 @@ const App = () => {
             </div>
             <div className="relative animate-fadeInRight">
               <div className="aspect-square bg-gradient-to-br from-gold to-yellow-600 rounded-full flex items-center justify-center text-8xl font-bold text-black shadow-2xl">
-                LV
+                FC
               </div>
               <div className="absolute -top-4 -right-4 bg-gold text-black px-4 py-2 rounded-full text-sm font-semibold animate-pulse">
                 Award Winner
@@ -375,7 +375,7 @@ const App = () => {
           <div className="grid md:grid-cols-4 gap-8">
             <div className="md:col-span-2">
               <div className="text-3xl font-bold mb-4">
-                <span className="text-gold">First Class</span>Travel
+                <span className="text-gold">First Class</span> Travel
               </div>
               <p className="text-gray-400 mb-6 max-w-md">
                 Premium chauffeur service delivering luxury and excellence across Malaysia. 
