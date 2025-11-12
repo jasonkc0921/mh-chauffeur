@@ -101,7 +101,7 @@ const App = () => {
             Chauffeur Service
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-300 max-w-3xl mx-auto leading-relaxed animate-fadeInUp animation-delay-300">
-            Travelling in ultimate luxury with LeVince Chauffeur Service. With the largest fleet of luxury vehicles, 
+            Travelling in ultimate luxury with First Class Travel Chauffeur Service. With the largest fleet of luxury vehicles, 
             we offer bespoke, first-class chauffeur services, personalised journey that ensure you arrive in style.
           </p>
           <button className="bg-gold hover:bg-yellow-600 text-black px-8 py-4 text-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg animate-fadeInUp animation-delay-600">
@@ -119,7 +119,7 @@ const App = () => {
       <section className="bg-gray-900 py-12">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <p className="text-lg text-gray-400 mb-8">Trusted by Prestigious Brands</p>
-          <p className="text-2xl font-semibold text-gold">Businesses around the globe choose LeVince</p>
+          <p className="text-2xl font-semibold text-gold">Businesses around the globe choose First Class Travel</p>
         </div>
       </section>
 
@@ -421,7 +421,7 @@ const App = () => {
           
           <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
             <div className="text-sm text-gray-500 mb-4 md:mb-0">
-              © 2024 LeVince Chauffeur Service. All rights reserved.
+              © 2024 First Class Dream Makers Resources. All rights reserved.
             </div>
             <div className="text-sm text-gray-500">
               Designed for luxury. Built for excellence.
