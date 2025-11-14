@@ -47,7 +47,7 @@ const App = () => {
     try {
       // Replace with your actual Google Apps Script web app URL
       const SCRIPT_URL =
-        "https://script.google.com/macros/s/AKfycbwjINNEJHaYgvXW6_kCNvZKsEs370k_h-gJQkmdk4Yd7jkYbtZvBwdMWaPvHdTWtE5O/exec";
+        "https://script.google.com/macros/s/AKfycbwxcitsUEi22IS8rY3S_Pc6olr3u-lTn3RCTQWflPgh922rxuXcXkJ-VeBhUpidLr2gnA/exec";
 
       const response = await fetch(SCRIPT_URL, {
         method: "POST",
