@@ -132,10 +132,7 @@ const App = () => {
     }
   ];
 
-  const handleQuoteSubmit = (e) => {
-    e.preventDefault();
-    alert('Quote request submitted! We will contact you soon.');
-  };
+
 
   return (
     <div className="bg-black text-white min-h-screen">
