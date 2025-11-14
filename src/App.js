@@ -384,7 +384,7 @@ const App = () => {
                   className="w-full px-4 py-3 bg-gray-700 rounded-md focus:ring-2 focus:ring-gold focus:outline-none transition-all duration-300"
                 />
                 <input 
-                  type="tel" 
+                  type="text" 
                   name="tel"
                   value={formData.tel}
                   onChange={handleInputChange}
