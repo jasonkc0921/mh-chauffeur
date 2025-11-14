@@ -4,95 +4,9 @@ import { ChevronDown, Star, Clock, Users, Phone, Mail, MapPin, Menu, X, Car, Awa
 import WhatsAppChat from "./components/WhatsAppChat";
 import './App.css';
 
-
-
-
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-    const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    tel: "",
-    service: "",
-    message: "",
-  });
-
-  
-  useEffect(() => {
-    const urlParams = new URLSearchParams(window.location.search);
-    const scrollTo = urlParams.get("scrollTo");
-
-    if (scrollTo === "contact") {
-      setTimeout(() => {
-        const element = document.getElementById("contact");
-        if (element) {
-          element.scrollIntoView({
-            behavior: "smooth",
-            block: "start",
-          });
-        }
-      }, 500); // Longer delay for cross-page navigation
-    }
-  }, []);
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-
-    if (!formData.name || !formData.email || !formData.message) {
-      alert("Please fill in all required fields (Name, Email, and Message).");
-      return;
-    }
-
-    try {
-      // Replace with your actual Google Apps Script web app URL
-      const SCRIPT_URL =
-        "https://script.google.com/macros/s/AKfycbwjINNEJHaYgvXW6_kCNvZKsEs370k_h-gJQkmdk4Yd7jkYbtZvBwdMWaPvHdTWtE5O/exec";
-
-      const response = await fetch(SCRIPT_URL, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        mode: "no-cors",
-        body: JSON.stringify(formData),
-        redirect: "follow",
-      });
-
-      console.log("Form submission completed");
-
-      var result;
-
-      result = {
-        success: true,
-        message: "Thank you! Your message has been submitted successfully.",
-      };
-    } catch (error) {
-      console.error("Network error:", error);
-      result = {
-        success: false,
-        message:
-          "Sorry, there was an error submitting your message. Please try again.",
-      };
-    }
-
-    console.log(result);
-
-    if (result.success) {
-      alert("Thank you for your message! We will get back to you soon.");
-      setFormData({ name: "", phone: "", email: "", message: "" });
-    } else {
-      alert("There was an error submitting your message. Please try again.");
-      console.error("Submission error:", result.message);
-    }
-  };
-
-  const handleInputChange = (e: { target: { name: any; value: any } }) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -366,39 +280,26 @@ const App = () => {
                 </div>
               </div>
             </div>
-            <form onSubmit={handleSubmit}>
+
             <div className="bg-gray-800 p-8 rounded-lg animate-fadeInRight contact-form">
               <h3 className="text-2xl font-semibold mb-6">Request a Quote</h3>
               <div className="space-y-4">
                 <input 
                   type="text" 
-                  name="name"
-                  value={formData.name}
-                  onChange={handleInputChange}
                   placeholder="Full Name" 
                   className="w-full px-4 py-3 bg-gray-700 rounded-md focus:ring-2 focus:ring-gold focus:outline-none transition-all duration-300"
                 />
                 <input 
                   type="email" 
-                  name="email"
-                  value={formData.email}
-                  onChange={handleInputChange}
                   placeholder="Email Address" 
                   className="w-full px-4 py-3 bg-gray-700 rounded-md focus:ring-2 focus:ring-gold focus:outline-none transition-all duration-300"
                 />
                 <input 
                   type="tel" 
-                  name="tel"
-                  value={formData.tel}
-                  onChange={handleInputChange}
                   placeholder="Phone Number" 
                   className="w-full px-4 py-3 bg-gray-700 rounded-md focus:ring-2 focus:ring-gold focus:outline-none transition-all duration-300"
                 />
-                <select 
-                name="service"
-                value={formData.service}
-                onChange={handleInputChange}
-                className="w-full px-4 py-3 bg-gray-700 rounded-md focus:ring-2 focus:ring-gold focus:outline-none transition-all duration-300">
+                <select className="w-full px-4 py-3 bg-gray-700 rounded-md focus:ring-2 focus:ring-gold focus:outline-none transition-all duration-300">
                   <option value="">Select Service Type</option>
                   <option value="airport">Airport Transfer</option>
                   <option value="corporate">Corporate Travel</option>
@@ -406,22 +307,18 @@ const App = () => {
                   <option value="vip">VIP Experience</option>
                 </select>
                 <textarea 
-                name="message"
-                value={formData.message}
-                onChange={handleInputChange}
                   placeholder="Service Requirements & Additional Details" 
                   rows={4}
                   className="w-full px-4 py-3 bg-gray-700 rounded-md focus:ring-2 focus:ring-gold focus:outline-none resize-none transition-all duration-300"
                 />
                 <button 
-                  type="submit"
+                  onClick={handleQuoteSubmit}
                   className="w-full bg-gold hover:bg-yellow-600 text-black py-3 px-6 font-semibold transition-all duration-300 hover:scale-105 shadow-lg"
                 >
                   Send Request
                 </button>
               </div>
             </div>
-            </form>
           </div>
         </div>
       </section>
